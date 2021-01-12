@@ -34,10 +34,16 @@ echo $result4
 
 declare -A TotalList
 
-TotalList[compu1]=$result1
-TotalList[compu2]=$result2
-TotalList[compu3]=$result3
-TotalList[compu4]=$result4
+TotalList[0]=$result1
+TotalList[1]=$result2
+TotalList[2]=$result3
+TotalList[3]=$result4
 
 echo ${TotalList[@]}
 
+for ((i=0; i<=3; i++))
+do
+	Data[$i]=${TotalList[$i]}
+done
+
+echo ${Data[@]}
