@@ -47,3 +47,18 @@ do
 done
 
 echo ${Data[@]}
+
+for (( i=0; i<=3; i++ ))
+do
+	for (( j=i+1; j<=3; j++ ))
+	do
+		if [ ${Data[$i]} -lt ${Data[$j]} ]
+		then
+			t=${Data[$i]}
+			Data[$i]=${Data[$j]}	
+			Data[$j]=$t
+			echo ${Data[@]}
+		fi
+	done
+done	
+echo ${Data[@]}
