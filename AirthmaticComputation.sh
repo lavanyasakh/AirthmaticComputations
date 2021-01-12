@@ -23,3 +23,12 @@ read -p "Enter value of c: " c3
 
 result=$(( $c3 + $a3/$b3 ))
 echo $result3
+
+read -p "Enter value of a: " a4
+read -p "Enter value of b: " b4
+read -p "Enter value of c: " c4
+
+
+result=$(( $a4%$b4 + $c4 ))
+echo $result4
+
