@@ -16,3 +16,10 @@ read -p "Enter value of c: " c2
 result=$(( $a2 * $b2 + $c2 ))
 echo $result2
 
+read -p "Enter value of a: " a3
+read -p "Enter value of b: " b3
+read -p "Enter value of c: " c3
+
+
+result=$(( $c3 + $a3/$b3 ))
+echo $result3
